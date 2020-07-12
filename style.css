@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: blueviolet;
+}
+.navbar{
+    background-color: rgba(29,12,53,0.9);
+}
+
+button:focus{
+    outline: none;
+}
+
+#land{
+    
+    background-image: url(assets/bg.png);
+    max-height: 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#schedule_row{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#schedule-button{
+    margin-right: 8px;
+    background-color: rgba(29,12,53,0.9);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: white;
+    color: #fff;
+    cursor: default;
+}
+
+.fa-angle-right{
+    font-size: 3rem;
+    color: #ffb84d;
+    cursor: pointer;
+}
+
+#logo_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#log_row img{
+    
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#register_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+#dates{
+    color:#ffb84d;
+    font-size: 1.5rem;
+    font-weight: 1000;
+}
+
+#seperator{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+#register{
+    background-color: #ffb84d;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3rem;
+    padding-left: 5px;
+    padding-right: 100px;
+    border: none;   
+}
+
+#about{
+    font-size: 2rem;
+    color: white;
+}
+#video{
+    display: flex;
+    margin-top: 2%;
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+
+.black{
+    position: absolute;
+    background-color: black;
+    height: 400px;
+    width: 600px;
+    
+    transform: rotate(10deg);
+}
+
+.violet{
+    position: absolute;
+    background-color: darkviolet;
+    height: 400px;
+    width: 600px;
+    
+    transform: rotate(-10deg);
+}
+
+#vid{
+    position: absolute;
+    z-index: 1;
+}
+
+iframe{
+    max-width: 95%;
+    max-height: 95%;
+}
+
+#count-container{
+    margin-top: 20%;
+    background-color: black;
+    opacity: 0.8;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.data{
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#number{
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#name{
+    color: #ffb84d;
+    font-size: 2rem;
+    font-weight: 500;
+}
