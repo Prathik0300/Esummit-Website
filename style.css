@@ -145,11 +145,14 @@ iframe{
 
 @media (width<975px){
     #video{
-        margin-top: 35%;
+        margin-bottom: 45%;
+        margin-top: 45%;
+        margin-left: 20%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    
 }
 
 
