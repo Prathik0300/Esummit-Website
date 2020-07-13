@@ -259,76 +259,147 @@ iframe{
     }
 }
 
-/*******************************CATEGORY CARDS DIV****************************/
+
+
 
 #category-div-container{
-    background: blue;
-    height: 500px;
-    width: 100%;
-    max-height: 500px;
-}
-
-#category-div-row1{
-    position: relative;
     display: flex;
+    margin-top: 100px;
+    max-height: 100%;
+    width: auto;
+}
+.card{
+    height: 400px;
+    max-width: 100%;
+    background-color: rgb(28,12,53);
+    opacity: 0.8;
+    color: rgb(28,12,53);
+    border: 3px solid #fff;
+    border-radius: 2rem;
+    cursor: pointer;
     overflow: hidden;
-    flex-direction: row;
-    background-color: black;
-    width: 100%;
-    height: 80%;
 }
 
-.first-card{
-    position: absolute;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    margin: 4%;
-    width: 60%;
-    height: 70%;
-    background-color: aqua;
-}
-
-.category-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    width: 50%;
+.card-img-top{
     height: 50%;
-}
-
-.loot-bag{
+    width: 50%;
     display: flex;
+    padding: 40px;
+    align-self: center;
     justify-content: center;
     align-items: center;
-    background-color: wheat;
     border-radius: 50%;
-    border: 1px solid rgb(28,12,53);
-    width: 100%;
-    height: 100%;
-    margin-top: 60px;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
+    background-color: #fff;
 }
 
-.category-header{
+.card-title{
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem
+}
+
+#test{
+    margin-top: 110%;
+    transition: 0.3s ease-in-out;
+}
+
+.card-text{
+    color:#fff;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.learn{
+    background-color: black;
+    opacity: 0.9;
+    border: 2px solid #fff;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.category-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    align-content: center;
+.card:hover{
+    background-color: rgb(28,12,53);
+    opacity:1;
 }
 
-.first-card:hover{
-    width: 100%;
-    height: 100%;
+.card:hover #test{
+    margin-top: -58%;
+    z-index: 2;
+}
+
+@keyframes fading{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.card:hover .card-img-top{
+    animation: fading;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@media(width<1200px){
+    
+    .card{
+    height: 400px;
+    width: 350px;
+    max-width: 100vh;
+}
+    
+    
+    
+    #category-div-container{
+        
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    #category-div-row1{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    
+    
+}
+
+
+
+@media (width<560px){
+ 
+    
+    .col-lg-6{
+        width: 350px;
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+     #category-div-row1{
+        width:350px; 
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+}
+
+@media(width<1142px){
+    #category-div-container{
+        overflow-x: hidden;
+        display: flex;
+        width: 100vh;
+        max-height: 100%;
+    }
 }
