@@ -706,6 +706,8 @@ iframe{
     font-size: 35px;
     border-radius: 50%;
     border: 2px solid #fff;
+    transition: 0.4s ease-in-out;
+
 }
 
 #email-col{
@@ -730,7 +732,9 @@ iframe{
 #emailId{
     text-decoration: none;
     color: blueviolet;
+    transition: 0.3s ease-in-out;
 }
+
 
 .fa-envelope:hover{
     background-color: #fff;
