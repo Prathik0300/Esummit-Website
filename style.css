@@ -543,6 +543,7 @@ iframe{
     
 }
 
+
 #wipro{
     position: relative;
     width: 100%;
@@ -697,6 +698,10 @@ iframe{
     margin-top: 100px;
 }
 
+.contact-title{
+    color: #fff;
+    padding-top: 30px;
+}
 .fa-envelope{
     cursor: pointer;
     text-align: center;
@@ -824,3 +829,20 @@ iframe{
 }
 
 /****************************COPYRIGHT****************************/
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    color: #fff;
+}
+
+
+
+#owner{
+    text-decoration: none;
+    color: blueviolet;
+    padding-left: 5px;
+}
