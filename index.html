@@ -2,14 +2,19 @@
 <html>
     <head>
         <meta charset="utf-8">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+        
+        
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        
         <title>E-SUMMIT</title>
     </head>
     
@@ -27,19 +32,19 @@
             
            <div class="collapse navbar-collapse" id="nav-content">
                     <ul class="navbar-nav mr-3 navbar-items">
-                        <li class="nav-link" href="#" value="1">HOME</li>
+                        <li class="nav-link" href="#" value="1" onclick="moveto(this)" id="nav-home" >HOME</li>
                     </ul>
                     
                     <ul class="navbar-nav mr-3 navbar-items">
-                        <li class="nav-link" href="#" value="2">ABOUT</li>
+                        <li class="nav-link" href="#" value="2" onclick="moveto(this)" id="nav-about" >ABOUT</li>
                     </ul>
                     
                     <ul class="navbar-nav mr-3 navbar-items">
-                        <li class="nav-link" href="#" value="3">EVENTS</li>
+                        <li class="nav-link" href="#" value="3" onclick="moveto(this)" id="nav-event">EVENTS</li>
                     </ul>
                     
                     <ul class="navbar-nav mr-3 navbar-items">
-                        <li class="nav-link" href="#" value="4">SPEAKERS</li>
+                        <li class="nav-link" href="#" value="4" onclick="moveto(this)" id="nav-speaker">SPEAKERS</li>
                     </ul>
                     
                     <ul class="navbar-nav mr-3 navbar-items">
@@ -51,7 +56,7 @@
                     </ul>
                     
                     <ul class="navbar-nav mr-3 navbar-items">
-                        <li class="nav-link" href="#" value="7">CONTACT US</li>
+                        <li class="nav-link" href="#" value="7" onclick="moveto(this)" id="nav-contact">CONTACT US</li>
                     </ul>
                </div>
         </nav>
@@ -126,7 +131,7 @@
         <!--------------- NAVIGATION BUTTON DIV --------------->
         
         
-        <div class="container-fluid">
+        <div id="event" class="container-fluid">
             <div style="display: flex; font-weight: 500; color: white; cursor: default;" class="mt-5"><h2><b>WHAT WE HAVE FOR YOU</b></h2></div>
             <div id="nav-row" class="row mt-5 text-center">
                 
@@ -296,7 +301,7 @@
         
 <!--------------------------FOOTER DIV------------------------------->
         
-        <div class="container-fluid" style="background-color: rgb(28,12,53);">
+        <div class="container-fluid" id="contact-us" style="background-color: rgb(28,12,53);">
             <div class="contact-title" id="footer-container">
                 <h2>CONTACT US</h2>
             </div>
@@ -337,8 +342,8 @@
             </div>
             
             <div class="mt-5">
-                <div class="ecell-logo">
-                    <img src="assets/ecell%20logo%20transparent.png">
+                <div onload="transition(this)" class="ecell-logo">
+                    <img id="transition_logo" src="assets/ecell%20logo%20transparent.png">
                 </div>
                 
                 <div class="ecell-text col-xl-12 col-lg-12 col-sm-12 col-xs-12">

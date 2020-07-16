@@ -5,10 +5,13 @@
 
 body{
     background-color: blueviolet;
-    perspective: 800px;
 }
 .navbar{
     background-color: rgba(29,12,53,0.9);
+}
+
+.active{
+    color: #ffb84d;
 }
 
 button:focus{
