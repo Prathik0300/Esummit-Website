@@ -66,8 +66,11 @@
         
         <div id="land" class="flex flex-body container-fluid">
             <div id="schedule_row" class="row pt-5">
-                <button style="display: flex;flex-direction: row;" id="schedule-button" type="button" class="mt-4">SCHEDULE!</button>
-                <i class="mt-4 fa fa-angle-right"></i>
+                
+                    <i onclick="scheduleOut()" style="display: none;" id="angle-left" class="mt-4 animate fa fa-angle-left "></i>
+                    <button style="display: flex;flex-direction: row;" id="schedule-button" type="button" class="mt-4">SCHEDULE!</button>
+                    <i onclick="movein()" id="angle-right" class="mt-4 fa fa-angle-right"></i>
+                
             </div>
             
             <div class="col-lg-12 row mt-5 text-center" id="logo_row">
@@ -83,6 +86,15 @@
             </div> 
         </div>
         
+<!---------------------------up arrow--------------------------->
+        
+        <div style="display: none;" onclick="goUp()" id="up">
+            <i class="fa fa-arrow-up"></i>
+        </div>
+        
+        
+        
+<!-------------------------------------------------------------->
         <div id="info" class="container-fluid mt-5">
             <div id="info-row" class="row col-lg-12 mt-5">
                 <div id="content" class="col-lg-6 mt-4">

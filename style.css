@@ -3,9 +3,15 @@
     margin: 0;
 }
 
+html{
+        scroll-behavior: smooth;
+
+}
+
 body{
     background-color: blueviolet;
     cursor: default;
+
 }
 .navbar{
     background-color: rgba(29,12,53,0.9);
@@ -31,6 +37,7 @@ button:focus{
 #schedule_row{
     display: flex;
     flex-direction: row-reverse;
+    overflow: hidden;
 }
 
 #schedule-button{
@@ -46,6 +53,12 @@ button:focus{
 }
 
 .fa-angle-right{
+    font-size: 3rem;
+    color: #ffb84d;
+    cursor: pointer;
+}
+
+.fa-angle-left{
     font-size: 3rem;
     color: #ffb84d;
     cursor: pointer;
@@ -94,6 +107,40 @@ button:focus{
     border: none;   
 }
 
+/***************************************************************/
+
+/*****************************UP ARROW ************************/
+
+
+#up{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border: 2px solid rgb(28,12,53);
+    bottom: 2%;
+    right: 1%;
+    z-index: 99;
+}
+
+#up i{
+    color: white;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+#up:hover{
+    cursor: pointer;
+    background-color: rgb(28,12,53);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/*************************************************************/
 
 
 #info-row{
