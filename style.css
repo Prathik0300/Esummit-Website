@@ -5,6 +5,7 @@
 
 body{
     background-color: blueviolet;
+    cursor: default;
 }
 .navbar{
     background-color: rgba(29,12,53,0.9);
@@ -670,6 +671,18 @@ iframe{
     }
 }
 
+/*********************MODAL SPEAKER INFO***************/
+
+#wipro_modal .model-content .model-body row{
+    background-image: linear-gradient(to bottom left,rgba(28,12,53,0.9),blueviolet); !important
+}
+
+.round-border img{
+    border-radius: 50%;
+}
+
+
+
 /************************VIEW ALL BUTTON***********************/
 
 #view-all{
@@ -695,6 +708,8 @@ iframe{
 }
 
 /**********************FOOTER CONTAINER**************************/
+
+
 
 #footer-container{
     
@@ -763,6 +778,8 @@ iframe{
 
 /*************************ECELL LOGO DIV**************************/
 
+
+
 .ecell-logo{
     display: flex;
     justify-content: center;
@@ -770,6 +787,7 @@ iframe{
     max-height: 100%;
     max-width: 100%;
 }
+
 
 .ecell-logo img{
     height: 100px;
@@ -842,10 +860,14 @@ iframe{
     color: #fff;
 }
 
-
-
 #owner{
     text-decoration: none;
     color: blueviolet;
     padding-left: 5px;
 }
+
+
+
+/**************FOR PROFILE.HTML*****************/
+
+
